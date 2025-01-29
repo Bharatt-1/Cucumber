@@ -29,20 +29,20 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>7.20.1</version>
-            <scope>test</scope>
-        </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.cucumber/cucumber-junit &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.cucumber</groupId>-->
+<!--            <artifactId>cucumber-junit</artifactId>-->
+<!--            <version>7.20.1</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <scope>compile</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>junit</groupId>-->
+<!--            <artifactId>junit</artifactId>-->
+<!--            <version>4.13.2</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -87,7 +87,7 @@
                         <groupId>info.cukes</groupId>
                         <artifactId>Cucumber</artifactId>
                     </executableDependency>
-                    <mainClass>cucumber.api.cli.Main</mainClass>
+                    <mainClass>cucumber.api.cli.main</mainClass>
                     <arguments>
                         <argument>--format</argument>
                         <argument>junit:target/cucumber-junit-report/allcukes.xml</argument>
@@ -102,13 +102,13 @@
                         <argument>src/</argument>
                     </arguments>
                 </configuration>
-<!--                <dependencies>-->
+                <dependencies>
 <!--                    <dependency>-->
 <!--                        <groupId>info.cukes</groupId>-->
 <!--                        <artifactId>cucumber-core</artifactId>-->
 <!--                        <version>1.1.5</version>-->
 <!--                    </dependency>-->
-<!--                </dependencies>-->
+                </dependencies>
             </plugin>
         </plugins>
     </build>
